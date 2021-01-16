@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import * as uuid from 'uuid';
 
 import { Surfspot, SurfspotTopThree } from './surfspots.model';
+import { CreateSurfspotDto } from './dto/create-surfspot.dto';
 
 @Injectable()
 export class SurfspotsService {
@@ -11,7 +12,9 @@ export class SurfspotsService {
     return this.surfspots;
   }
 
-  createSurfspot(title: string, description: string, url: string): Surfspot {
+  createSurfspot(createSurfspotDto: CreateSurfspotDto): Surfspot {
+    const { title, description, url } = createSurfspotDto;
+
     const surfspot: Surfspot = {
       id: uuid.v1(),
       title,

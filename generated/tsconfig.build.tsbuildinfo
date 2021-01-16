@@ -161,6 +161,46 @@
         "signature": "d2f31f19e1ba6ed59be9259d660a239d9a3fcbbc8e038c6b2009bde34b175fed",
         "affectsGlobalScope": false
       },
+      "./app.module.d.ts": {
+        "version": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
+        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
+        "affectsGlobalScope": false
+      },
+      "./main.d.ts": {
+        "version": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "./surfspots/surfspots.model.d.ts": {
+        "version": "102db46cc9b35e689dc4a8a15906aa3dba8a38695351b2c0480905704d6bbd66",
+        "signature": "102db46cc9b35e689dc4a8a15906aa3dba8a38695351b2c0480905704d6bbd66",
+        "affectsGlobalScope": false
+      },
+      "./surfspots/surfspots.service.d.ts": {
+        "version": "94b02ccbe066e2bf8fca2a157022aa6468337981127852f837220000154b9e68",
+        "signature": "94b02ccbe066e2bf8fca2a157022aa6468337981127852f837220000154b9e68",
+        "affectsGlobalScope": false
+      },
+      "../dist/surfspots/surfspots.model.d.ts": {
+        "version": "102db46cc9b35e689dc4a8a15906aa3dba8a38695351b2c0480905704d6bbd66",
+        "signature": "102db46cc9b35e689dc4a8a15906aa3dba8a38695351b2c0480905704d6bbd66",
+        "affectsGlobalScope": false
+      },
+      "./surfspots/surfspots.controller.d.ts": {
+        "version": "53e6c62e0886b2dce55ab24163e69a3160fcdbf4ac0fbfa61d6703b8bc9ec8d0",
+        "signature": "53e6c62e0886b2dce55ab24163e69a3160fcdbf4ac0fbfa61d6703b8bc9ec8d0",
+        "affectsGlobalScope": false
+      },
+      "./surfspots/surfspots.module.d.ts": {
+        "version": "e7b474644e7793a7fe67adbaa38a43d4ce4c18d83c9e96930916f69ceea357d4",
+        "signature": "e7b474644e7793a7fe67adbaa38a43d4ce4c18d83c9e96930916f69ceea357d4",
+        "affectsGlobalScope": false
+      },
+      "./surfspots/dto/create-surfspot.dto.d.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "affectsGlobalScope": false
+      },
       "../node_modules/reflect-metadata/index.d.ts": {
         "version": "8d6d51a5118d000ed3bfe6e1dd1335bebfff3fef23cd2af2f84a24d30f90cc90",
         "signature": "8d6d51a5118d000ed3bfe6e1dd1335bebfff3fef23cd2af2f84a24d30f90cc90",
@@ -1186,29 +1226,19 @@
         "signature": "102db46cc9b35e689dc4a8a15906aa3dba8a38695351b2c0480905704d6bbd66",
         "affectsGlobalScope": false
       },
-      "../src/surfspots/surfspots.service.ts": {
-        "version": "cccf1611bf537f6ca9cbbe383af02b3718f11588aaf7348bf1391a0956540876",
-        "signature": "94b02ccbe066e2bf8fca2a157022aa6468337981127852f837220000154b9e68",
+      "../node_modules/@nestjs/testing/interfaces/override-by-factory-options.interface.d.ts": {
+        "version": "ca248f650c19abc031e2aaafa41fceb524378b1a2249905b44d1c8e4148fcb52",
+        "signature": "ca248f650c19abc031e2aaafa41fceb524378b1a2249905b44d1c8e4148fcb52",
         "affectsGlobalScope": false
       },
-      "../dist/surfspots/surfspots.model.d.ts": {
-        "version": "102db46cc9b35e689dc4a8a15906aa3dba8a38695351b2c0480905704d6bbd66",
-        "signature": "102db46cc9b35e689dc4a8a15906aa3dba8a38695351b2c0480905704d6bbd66",
+      "../node_modules/@nestjs/core/metadata-scanner.d.ts": {
+        "version": "7cb9b6d5c1e3508fbc81e7bbab314eac54715f9326ac72fd0eb65f17a4393d50",
+        "signature": "7cb9b6d5c1e3508fbc81e7bbab314eac54715f9326ac72fd0eb65f17a4393d50",
         "affectsGlobalScope": false
       },
-      "../src/surfspots/surfspots.controller.ts": {
-        "version": "483042c77335832f52674507b3d48451db3ecfde0a78c4fc8af31118b9596a7b",
-        "signature": "53e6c62e0886b2dce55ab24163e69a3160fcdbf4ac0fbfa61d6703b8bc9ec8d0",
-        "affectsGlobalScope": false
-      },
-      "../src/surfspots/surfspots.module.ts": {
-        "version": "74f139e884e667602dff7baa29ddd735f1293090712be7ca2675ceccda30b85a",
-        "signature": "e7b474644e7793a7fe67adbaa38a43d4ce4c18d83c9e96930916f69ceea357d4",
-        "affectsGlobalScope": false
-      },
-      "../src/app.module.ts": {
-        "version": "348b6839a54491a7246553885c4d3aa2d097d8b7a3fa3dca514087ddf33a83b3",
-        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
+      "../node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts": {
+        "version": "e3d221660c0b79a9a3ba1111b3dfbb1136c0b52d7609b0054d3ce09ce711a3e6",
+        "signature": "e3d221660c0b79a9a3ba1111b3dfbb1136c0b52d7609b0054d3ce09ce711a3e6",
         "affectsGlobalScope": false
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -1316,11 +1346,6 @@
         "signature": "e99e3ad9035927f61b1d6b54c51fca01e46bdcaf861fd9484086d871e76d0aef",
         "affectsGlobalScope": false
       },
-      "../node_modules/@nestjs/core/metadata-scanner.d.ts": {
-        "version": "7cb9b6d5c1e3508fbc81e7bbab314eac54715f9326ac72fd0eb65f17a4393d50",
-        "signature": "7cb9b6d5c1e3508fbc81e7bbab314eac54715f9326ac72fd0eb65f17a4393d50",
-        "affectsGlobalScope": false
-      },
       "../node_modules/@nestjs/core/middleware/routes-mapper.d.ts": {
         "version": "5175a0f207a73df7426acc2bdc854b0c4bfab7434742f873816f0fc71f4fa2f5",
         "signature": "5175a0f207a73df7426acc2bdc854b0c4bfab7434742f873816f0fc71f4fa2f5",
@@ -1349,11 +1374,6 @@
       "../node_modules/@nestjs/core/nest-application.d.ts": {
         "version": "398ee5590d2e022f7c00f0c1f049db902cd8c7a2bf9bfacac5bef35cc8977aa7",
         "signature": "398ee5590d2e022f7c00f0c1f049db902cd8c7a2bf9bfacac5bef35cc8977aa7",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts": {
-        "version": "e3d221660c0b79a9a3ba1111b3dfbb1136c0b52d7609b0054d3ce09ce711a3e6",
-        "signature": "e3d221660c0b79a9a3ba1111b3dfbb1136c0b52d7609b0054d3ce09ce711a3e6",
         "affectsGlobalScope": false
       },
       "../node_modules/@nestjs/core/nest-factory.d.ts": {
@@ -1389,6 +1409,61 @@
       "../node_modules/@nestjs/core/index.d.ts": {
         "version": "7b5ed961a0e03965299591d73de8b8c41e8a68105ff4fc07a240b0dfb94a5a3d",
         "signature": "7b5ed961a0e03965299591d73de8b8c41e8a68105ff4fc07a240b0dfb94a5a3d",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/testing-module.d.ts": {
+        "version": "1cb85d69d6e68b4fcb46c6e121781e417f5784c1c0bd919a9cc4a00c6243c582",
+        "signature": "1cb85d69d6e68b4fcb46c6e121781e417f5784c1c0bd919a9cc4a00c6243c582",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/testing-module.builder.d.ts": {
+        "version": "ba8cf606aee66bd27748f6b51776ebc6117f8abdaee40052e890e697baff8e0b",
+        "signature": "ba8cf606aee66bd27748f6b51776ebc6117f8abdaee40052e890e697baff8e0b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/interfaces/override-by.interface.d.ts": {
+        "version": "9388b0ffb5ab94e23e0165a96985091a133e3632e5f92fd72b14df7d73b3804d",
+        "signature": "9388b0ffb5ab94e23e0165a96985091a133e3632e5f92fd72b14df7d73b3804d",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/interfaces/index.d.ts": {
+        "version": "a397d00d0454ddb1cae255c19bde344f78b8b93512cff09b98b7e148d889b6e6",
+        "signature": "a397d00d0454ddb1cae255c19bde344f78b8b93512cff09b98b7e148d889b6e6",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/test.d.ts": {
+        "version": "927c6cf84c59b3ca7fdb6d3cbc3aa986193337b6a9758994575106f6073ee737",
+        "signature": "927c6cf84c59b3ca7fdb6d3cbc3aa986193337b6a9758994575106f6073ee737",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/index.d.ts": {
+        "version": "0a33b8bff876368beef794f5f08e8221103efa394f9e0e27e19f557a8cdaa0a0",
+        "signature": "0a33b8bff876368beef794f5f08e8221103efa394f9e0e27e19f557a8cdaa0a0",
+        "affectsGlobalScope": false
+      },
+      "../src/surfspots/dto/create-surfspot.dto.ts": {
+        "version": "7eebd5478a100195fd083c8dba2189a547acfc59092b53a17ddad87cea10d99c",
+        "signature": "64d2f25a046b966bc824d6639bc14c6cc998993c5a02746c5f0945a9a80ad87c",
+        "affectsGlobalScope": false
+      },
+      "../src/surfspots/surfspots.service.ts": {
+        "version": "a8e43a09d9bddea7b8222e511b86aab0ac7a68a832931a8700fb29640672e4c4",
+        "signature": "339f96bd37479a98da2f170c6cd60e058f0ee3c2cd5b793258eefe62b52e6dd7",
+        "affectsGlobalScope": false
+      },
+      "../src/surfspots/surfspots.controller.ts": {
+        "version": "e219ebbeba5a55c9e73f632e0e8f596e505ba16c2dc873cef8b77153c2b734d9",
+        "signature": "cc83dafa8187e685943759f23ed398a6b73c7bdf10103e801268c2752410b714",
+        "affectsGlobalScope": false
+      },
+      "../src/surfspots/surfspots.module.ts": {
+        "version": "74f139e884e667602dff7baa29ddd735f1293090712be7ca2675ceccda30b85a",
+        "signature": "e7b474644e7793a7fe67adbaa38a43d4ce4c18d83c9e96930916f69ceea357d4",
+        "affectsGlobalScope": false
+      },
+      "../src/app.module.ts": {
+        "version": "348b6839a54491a7246553885c4d3aa2d097d8b7a3fa3dca514087ddf33a83b3",
+        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
@@ -1957,6 +2032,13 @@
       "configFilePath": "../tsconfig.build.json"
     },
     "referencedMap": {
+      "./surfspots/surfspots.controller.d.ts": [
+        "../dist/surfspots/surfspots.model.d.ts",
+        "./surfspots/surfspots.service.d.ts"
+      ],
+      "./surfspots/surfspots.service.d.ts": [
+        "./surfspots/surfspots.model.d.ts"
+      ],
       "../node_modules/@babel/parser/typings/babel-parser.d.ts": [
         "../node_modules/@babel/types/lib/index.d.ts"
       ],
@@ -2581,6 +2663,38 @@
       ],
       "../node_modules/@nestjs/core/services/reflector.service.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/index.d.ts": [
+        "../node_modules/@nestjs/testing/interfaces/index.d.ts",
+        "../node_modules/@nestjs/testing/test.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.builder.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/testing/interfaces/override-by-factory-options.interface.d.ts",
+        "../node_modules/@nestjs/testing/interfaces/override-by.interface.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/interfaces/override-by.interface.d.ts": [
+        "../node_modules/@nestjs/testing/interfaces/override-by-factory-options.interface.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.builder.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/test.d.ts": [
+        "../node_modules/@nestjs/common/interfaces/modules/module-metadata.interface.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.builder.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/testing-module.builder.d.ts": [
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@nestjs/core/metadata-scanner.d.ts",
+        "../node_modules/@nestjs/testing/interfaces/index.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/testing-module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts",
+        "../node_modules/@nestjs/core/application-config.d.ts",
+        "../node_modules/@nestjs/core/index.d.ts",
+        "../node_modules/@nestjs/core/injector/container.d.ts",
+        "../node_modules/@nestjs/core/injector/module.d.ts"
       ],
       "../node_modules/@types/babel__core/index.d.ts": [
         "../node_modules/@babel/parser/typings/babel-parser.d.ts",
@@ -3239,9 +3353,13 @@
         "../node_modules/@nestjs/core/index.d.ts",
         "../src/app.module.ts"
       ],
+      "../src/surfspots/dto/create-surfspot.dto.ts": [
+        "../node_modules/@nestjs/testing/index.d.ts"
+      ],
       "../src/surfspots/surfspots.controller.ts": [
         "../dist/surfspots/surfspots.model.d.ts",
         "../node_modules/@nestjs/common/index.d.ts",
+        "../src/surfspots/dto/create-surfspot.dto.ts",
         "../src/surfspots/surfspots.service.ts"
       ],
       "../src/surfspots/surfspots.module.ts": [
@@ -3252,10 +3370,18 @@
       "../src/surfspots/surfspots.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/uuid/index.d.ts",
+        "../src/surfspots/dto/create-surfspot.dto.ts",
         "../src/surfspots/surfspots.model.ts"
       ]
     },
     "exportedModulesMap": {
+      "./surfspots/surfspots.controller.d.ts": [
+        "../dist/surfspots/surfspots.model.d.ts",
+        "./surfspots/surfspots.service.d.ts"
+      ],
+      "./surfspots/surfspots.service.d.ts": [
+        "./surfspots/surfspots.model.d.ts"
+      ],
       "../node_modules/@babel/parser/typings/babel-parser.d.ts": [
         "../node_modules/@babel/types/lib/index.d.ts"
       ],
@@ -3880,6 +4006,38 @@
       ],
       "../node_modules/@nestjs/core/services/reflector.service.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/index.d.ts": [
+        "../node_modules/@nestjs/testing/interfaces/index.d.ts",
+        "../node_modules/@nestjs/testing/test.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.builder.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/testing/interfaces/override-by-factory-options.interface.d.ts",
+        "../node_modules/@nestjs/testing/interfaces/override-by.interface.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/interfaces/override-by.interface.d.ts": [
+        "../node_modules/@nestjs/testing/interfaces/override-by-factory-options.interface.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.builder.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/test.d.ts": [
+        "../node_modules/@nestjs/common/interfaces/modules/module-metadata.interface.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.builder.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/testing-module.builder.d.ts": [
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@nestjs/core/metadata-scanner.d.ts",
+        "../node_modules/@nestjs/testing/interfaces/index.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/testing-module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts",
+        "../node_modules/@nestjs/core/application-config.d.ts",
+        "../node_modules/@nestjs/core/index.d.ts",
+        "../node_modules/@nestjs/core/injector/container.d.ts",
+        "../node_modules/@nestjs/core/injector/module.d.ts"
       ],
       "../node_modules/@types/babel__core/index.d.ts": [
         "../node_modules/@babel/parser/typings/babel-parser.d.ts",
@@ -4532,9 +4690,11 @@
       ],
       "../src/surfspots/surfspots.controller.ts": [
         "../dist/surfspots/surfspots.model.d.ts",
+        "../src/surfspots/dto/create-surfspot.dto.ts",
         "../src/surfspots/surfspots.service.ts"
       ],
       "../src/surfspots/surfspots.service.ts": [
+        "../src/surfspots/dto/create-surfspot.dto.ts",
         "../src/surfspots/surfspots.model.ts"
       ]
     },
@@ -4921,12 +5081,8 @@
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../src/app.module.ts",
       "../src/main.ts",
-      "../src/surfspots/surfspots.controller.ts",
-      "../src/surfspots/surfspots.model.ts",
-      "../src/surfspots/surfspots.module.ts",
-      "../src/surfspots/surfspots.service.ts"
+      "../src/surfspots/surfspots.model.ts"
     ]
   },
   "version": "4.1.3"

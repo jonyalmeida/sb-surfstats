@@ -1,6 +1,7 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { SurfspotsService } from './surfspots.service';
 import { Surfspot } from '../../dist/surfspots/surfspots.model';
+import { CreateSurfspotDto } from './dto/create-surfspot.dto';
 
 @Controller('surfspots')
 export class SurfspotsController {
@@ -12,12 +13,8 @@ export class SurfspotsController {
   }
 
   @Post()
-  createSurfspot(
-    @Body('title') title: string,
-    @Body('description') description: string,
-    @Body('url') url: string,
-  ): Surfspot {
-    console.log('body', title, description, url);
-    return this.surfspots.createSurfspot(title, description, url);
+  createSurfspot(@Body() createSurfspotDto: CreateSurfspotDto): Surfspot {
+    console.log('body', createSurfspotDto);
+    return this.surfspots.createSurfspot(createSurfspotDto);
   }
 }

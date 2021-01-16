@@ -17,7 +17,8 @@ let SurfspotsService = class SurfspotsService {
     getAllSurfspots() {
         return this.surfspots;
     }
-    createSurfspot(title, description, url) {
+    createSurfspot(createSurfspotDto) {
+        const { title, description, url } = createSurfspotDto;
         const surfspot = {
             id: uuid.v1(),
             title,

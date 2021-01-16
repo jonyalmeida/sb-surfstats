@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.SurfspotsController = void 0;
 const common_1 = require("@nestjs/common");
 const surfspots_service_1 = require("./surfspots.service");
+const create_surfspot_dto_1 = require("./dto/create-surfspot.dto");
 let SurfspotsController = class SurfspotsController {
     constructor(surfspots) {
         this.surfspots = surfspots;
@@ -22,9 +23,9 @@ let SurfspotsController = class SurfspotsController {
     getAllSurfspots() {
         return this.surfspots.getAllSurfspots();
     }
-    createSurfspot(title, description, url) {
-        console.log('body', title, description, url);
-        return this.surfspots.createSurfspot(title, description, url);
+    createSurfspot(createSurfspotDto) {
+        console.log('body', createSurfspotDto);
+        return this.surfspots.createSurfspot(createSurfspotDto);
     }
 };
 __decorate([
@@ -35,11 +36,9 @@ __decorate([
 ], SurfspotsController.prototype, "getAllSurfspots", null);
 __decorate([
     common_1.Post(),
-    __param(0, common_1.Body('title')),
-    __param(1, common_1.Body('description')),
-    __param(2, common_1.Body('url')),
+    __param(0, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String, String, String]),
+    __metadata("design:paramtypes", [create_surfspot_dto_1.CreateSurfspotDto]),
     __metadata("design:returntype", Object)
 ], SurfspotsController.prototype, "createSurfspot", null);
 SurfspotsController = __decorate([
