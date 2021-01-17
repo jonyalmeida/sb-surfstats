@@ -7,11 +7,14 @@ import {
   Post,
   Put,
   Query,
+  UsePipes,
+  ValidationPipe,
 } from '@nestjs/common';
 import { SurfspotsService } from './surfspots.service';
 import { Surfspot } from './surfspots.model';
 import { CreateSurfspotDto } from './dto/create-surfspot.dto';
 import { GetSurfspotFilterDto } from './dto/get-surfspots-filter.dto';
+import { SurfspotTopThreeRankingValidationPipe } from './pipes/pipe-topThreeRanking-validation.pipe';
 
 @Controller('surfspots')
 export class SurfspotsController {
@@ -34,7 +37,8 @@ export class SurfspotsController {
 
   @Put('/:id')
   updateSurfspotById(
-    @Body('topThreeRating') topThreeRating: string,
+    @Body('topThreeRating', SurfspotTopThreeRankingValidationPipe)
+    topThreeRating: string,
     @Param('id') id: string,
   ) {
     return this.surfspots.updateSurfspotById(topThreeRating, id);
@@ -46,6 +50,7 @@ export class SurfspotsController {
   }
 
   @Post()
+  @UsePipes(ValidationPipe)
   createSurfspot(@Body() createSurfspotDto: CreateSurfspotDto): Surfspot {
     console.log('body', createSurfspotDto);
     return this.surfspots.createSurfspot(createSurfspotDto);

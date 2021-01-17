@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import * as uuid from 'uuid';
 
 import { Surfspot, SurfspotTopThree } from './surfspots.model';
@@ -22,7 +22,13 @@ export class SurfspotsService {
   }
 
   getSurfspotById(id: string): Surfspot {
-    return this.surfspots.find((surfspot) => surfspot.id === id);
+    const found = this.surfspots.find((surfspot) => surfspot.id === id);
+
+    if (!found) {
+      throw new NotFoundException(`Surfspot with ${id} not found.`);
+    }
+
+    return found;
   }
 
   updateSurfspotById(topThreeRating: string, id: string): Surfspot {
@@ -49,14 +55,15 @@ export class SurfspotsService {
   }
 
   deleteSurfspotById(id: string): Surfspot {
-    let i: number;
-    this.surfspots.filter((surfspot, idx) => {
-      if (surfspot.id === id) {
-        i = idx;
-      }
-    });
-    console.log(this.surfspots);
-    return this.surfspots.splice(i, 1)[0];
+    const deletedSurfspot = this.surfspots.find(
+      (surfspot) => surfspot.id === id,
+    );
+    if (!deletedSurfspot) {
+      throw new NotFoundException(`Surfspot with ${id} not found.`);
+    }
+    this.surfspots = this.surfspots.filter((surfspot) => surfspot.id !== id);
+
+    return deletedSurfspot;
   }
 
   createSurfspot(createSurfspotDto: CreateSurfspotDto): Surfspot {
