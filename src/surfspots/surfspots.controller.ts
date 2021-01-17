@@ -1,6 +1,14 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Post,
+  Put,
+} from '@nestjs/common';
 import { SurfspotsService } from './surfspots.service';
-import { Surfspot } from '../../dist/surfspots/surfspots.model';
+import { Surfspot } from './surfspots.model';
 import { CreateSurfspotDto } from './dto/create-surfspot.dto';
 
 @Controller('surfspots')
@@ -10,6 +18,24 @@ export class SurfspotsController {
   @Get()
   getAllSurfspots(): Surfspot[] {
     return this.surfspots.getAllSurfspots();
+  }
+
+  @Get('/:id')
+  getSurfspotById(@Param('id') id: string) {
+    return this.surfspots.getSurfspotById(id);
+  }
+
+  @Put('/:id')
+  updateSurfspotById(
+    @Body('topThreeRating') topThreeRating: string,
+    @Param('id') id: string,
+  ) {
+    return this.surfspots.updateSurfspotById(topThreeRating, id);
+  }
+
+  @Delete('/delete/:id')
+  deleteSurfspotById(@Param('id') id: string) {
+    return this.surfspots.deleteSurfspotById(id);
   }
 
   @Post()
