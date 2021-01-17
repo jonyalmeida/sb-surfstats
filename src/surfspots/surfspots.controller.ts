@@ -21,7 +21,9 @@ export class SurfspotsController {
   constructor(private surfspots: SurfspotsService) {}
 
   @Get()
-  getSurfspots(@Query() filterSurfspotDto: GetSurfspotFilterDto): Surfspot[] {
+  getSurfspots(
+    @Query(ValidationPipe) filterSurfspotDto: GetSurfspotFilterDto,
+  ): Surfspot[] {
     if (Object.keys(filterSurfspotDto).length) {
       console.log(filterSurfspotDto, 'asdhaiuhfuiaehfuidahSWJND');
       return this.surfspots.getSurfspotsByRanking(filterSurfspotDto);
