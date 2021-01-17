@@ -3,14 +3,22 @@ import * as uuid from 'uuid';
 
 import { Surfspot, SurfspotTopThree } from './surfspots.model';
 import { CreateSurfspotDto } from './dto/create-surfspot.dto';
+import { GetSurfspotFilterDto } from './dto/get-surfspots-filter.dto';
 
 @Injectable()
 export class SurfspotsService {
   private surfspots: Surfspot[] = [];
 
   getAllSurfspots(): Surfspot[] {
-    console.log('asdiowufnewo');
     return this.surfspots;
+  }
+
+  getSurfspotsByRanking(
+    getSurfspotFilterDto: GetSurfspotFilterDto,
+  ): Surfspot[] {
+    return this.surfspots.filter(
+      (surfspot) => surfspot.topThree === getSurfspotFilterDto.topThreeRanking,
+    );
   }
 
   getSurfspotById(id: string): Surfspot {

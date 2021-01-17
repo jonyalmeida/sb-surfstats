@@ -6,18 +6,25 @@ import {
   Param,
   Post,
   Put,
+  Query,
 } from '@nestjs/common';
 import { SurfspotsService } from './surfspots.service';
 import { Surfspot } from './surfspots.model';
 import { CreateSurfspotDto } from './dto/create-surfspot.dto';
+import { GetSurfspotFilterDto } from './dto/get-surfspots-filter.dto';
 
 @Controller('surfspots')
 export class SurfspotsController {
   constructor(private surfspots: SurfspotsService) {}
 
   @Get()
-  getAllSurfspots(): Surfspot[] {
-    return this.surfspots.getAllSurfspots();
+  getSurfspots(@Query() filterSurfspotDto: GetSurfspotFilterDto): Surfspot[] {
+    if (Object.keys(filterSurfspotDto).length) {
+      console.log(filterSurfspotDto, 'asdhaiuhfuiaehfuidahSWJND');
+      return this.surfspots.getSurfspotsByRanking(filterSurfspotDto);
+    } else {
+      return this.surfspots.getAllSurfspots();
+    }
   }
 
   @Get('/:id')
