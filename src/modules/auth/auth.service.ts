@@ -2,6 +2,7 @@ import {
   BadRequestException,
   Injectable,
   NotFoundException,
+  UnauthorizedException,
 } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 import { UsersService } from '../users/users.service';
@@ -21,7 +22,7 @@ export class AuthService {
     //check user password match
     const checkPass = await this.comparePassword(typedPassword, user.password);
     if (!checkPass) {
-      throw new BadRequestException(`Password doesn't match`);
+      throw new UnauthorizedException(`Password doesn't match`);
     }
 
     const { ...result } = user['dataValues'];
