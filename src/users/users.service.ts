@@ -5,13 +5,15 @@ import { USER_REPOSITORY } from '../core/database/constants/index';
 
 @Injectable()
 export class UsersService {
-  constructor(@Inject(USER_REPOSITORY) private readonly userRepository: User) {}
+  constructor(
+    @Inject(USER_REPOSITORY) private readonly userRepository: typeof User,
+  ) {}
 
   async create(user: UserDto): Promise<User> {
     return await this.userRepository.create<User>(user);
   }
 
   async findOneByEmail(email: string): Promise<User> {
-    return await this.userRepository.findOne<User>({ where: email });
+    return await this.userRepository.findOne<User>({ where: { email } });
   }
 }

@@ -8,9 +8,9 @@ import { UsersModule } from './users/users.module';
 @Module({
   imports: [
     SurfspotsModule,
+    UsersModule,
     DatabaseModule,
     ConfigModule.forRoot({ isGlobal: true }),
-    UsersModule,
   ],
 })
 export class AppModule {}
