@@ -1,9 +1,12 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 
-import { SurfspotsModule } from './surfspots/surfspots.module';
+import { SurfspotsModule } from './modules/surfspots/surfspots.module';
 import { DatabaseModule } from './core/database/database.module';
-import { UsersModule } from './users/users.module';
+import { UsersModule } from './modules/users/users.module';
+import { AuthService } from './modules/auth/auth.service';
+import { AuthController } from './modules/auth/auth.controller';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [
@@ -11,6 +14,9 @@ import { UsersModule } from './users/users.module';
     UsersModule,
     DatabaseModule,
     ConfigModule.forRoot({ isGlobal: true }),
+    AuthModule,
   ],
+  providers: [AuthService],
+  controllers: [AuthController],
 })
 export class AppModule {}
